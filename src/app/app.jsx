@@ -1,7 +1,16 @@
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import { Signin, Signup, Dashboard } from 'front/pages';
+
 export const App = () => {
   return (
-    <div className="App">
-      <h1>Hello React &amp; Redux, ESlint, Pritter and so many options..</h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" index element={<Signin />} />
+        <Route path="/registration" element={<Signup />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
