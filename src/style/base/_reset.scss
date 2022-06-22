@@ -1,3 +1,5 @@
+@use "../core" as *;
+
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -39,8 +41,7 @@ body {
   font-size: 14px;
   line-height: 1.15;
   font-family: $font;
-  font-weight: $regular;
-  background: $background;
+  font-weight: $reg;
 }
 
 h1,
@@ -56,7 +57,7 @@ li {
   margin: 0px;
   padding: 0px;
   font-family: $font;
-  font-weight: $regular;
+  font-weight: $reg;
 }
 
 ul,
@@ -137,7 +138,7 @@ textarea {
   padding: 0;
   line-height: 1.15;
   font-family: $font;
-  font-weight: $regular;
+  font-weight: $reg;
   border: $transparent;
 
   &:focus,
