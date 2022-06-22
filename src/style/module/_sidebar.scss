@@ -1,0 +1,20 @@
+@use "../core" as *;
+
+.app-sidebar {
+  position: fixed;
+  width: 66px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  border-right: 1px solid $border;
+
+  .ham-navigation {
+    @include icons(20px);
+    margin-top: 16px;
+    cursor: pointer;
+
+    svg {
+      @include icons(20px);
+    }
+  }
+}

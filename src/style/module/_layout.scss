@@ -1,0 +1,10 @@
+@use "../core" as *;
+
+.app-wrapper {
+  @include full(left, 100%);
+}
+
+.app-main-wrapper {
+  @include full(left, calc(100% - 76px));
+  margin-left: 76px;
+}
